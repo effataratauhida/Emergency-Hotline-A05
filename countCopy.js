@@ -22,6 +22,6 @@ for (var i = 0; i < btns.length; i++) {
     copyCount++;
     btnCopyNumber.innerText = copyCount;
 
-    // alert("Copied: " + number); 
+     alert("The number is copied: " + number); 
   }
 }
