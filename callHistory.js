@@ -26,15 +26,6 @@ buttons.forEach(function(btn) {
     if (points < 0) points = 0; // safeguard
     showPoints.innerText = points;
 
-    
-
-   
-   
-   
-   
-   
-   
-   
     //  time set
     function setTime() {
       const d = new Date();
@@ -45,14 +36,14 @@ buttons.forEach(function(btn) {
 
   function addHistoryList (title, number) {
     const elm = document.createElement('div');
-    elm.className = 'bg-[#f2f2f2] rounded-xl p-1 flex flex-col gap-2 shadow-lg mt-5';
-    elm.innerHTML = `
-    <div class="flex flex-col">
-        <span class="font-semibold text-lg">${title}</span>
-        <span class=" text-gray-500 px-2 py-1 rounded-lg text-lg font-medium">
+    elm.className = 'bg-[#f2f2f2] rounded-xl p-1 flex flex-row  justify-between shadow-lg mt-5 p-1';
+    elm.innerHTML = 
+    `<div class="flex flex-col">
+        <span class="font-medium text-sm">${title}</span>
+        <span class=" text-gray-500 px-2 py-1 rounded-lg text-base font-medium">
             ${number}</span>
     </div>
-    <div class="text-lg">${setTime()}</div>`;
+    <div class="text-sm">${setTime()}</div>`;
 
     historyList.append(elm);
   }
