@@ -36,7 +36,7 @@ buttons.forEach(function(btn) {
 
   function addHistoryList (title, number) {
     const elm = document.createElement('div');
-    elm.className = 'bg-[#f2f2f2] rounded-xl p-1 flex flex-row  justify-between shadow-lg mt-5 p-1';
+    elm.className = 'bg-[#f2f2f2] rounded-xl p-1 flex flex-row  justify-between shadow-lg mt-5 p-2';
     elm.innerHTML = 
     `<div class="flex flex-col">
         <span class="font-medium text-sm">${title}</span>
