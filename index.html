@@ -21,7 +21,7 @@
 
     <!-- header part -->
 
-    <header class="container mx-auto md:px-14 sm:px-8 py-6 flex flex-col md:flex-row
+    <header class="w-full mx-auto md:px-14 sm:px-8 py-5 flex flex-col md:flex-row
        justify-between items-center bg-white">
         <div class="flex items-center gap-[10px]">
             <img src="./assets/logo.png" alt="Logo" class="h-[50px] w-[50px]">
@@ -29,7 +29,7 @@
         </div>
         <div class="flex gap-2 md:gap-5 sm:gap-6 text-2xl font-semibold md:mt-0 mt-7 px-3 md:px-0">
             <!-- heart -->
-            <div class=" min-w-[120px] h-12 rounded-[50px] bg-[#41ff6b1a] py-2 px-6 flex gap-3">
+            <div class=" min-w-[120px] h-12 rounded-[50px] bg-[#41ff6b1a] py-2 px-6 flex gap-3 items-center">
                 <h3 id="btn-heart-number" class="text-center text-base md:text-xl font-semibold ">0</h3>
                 <img src="./assets/heart.png" alt="" class="w-[30px] h-[30px]">
             </div>
@@ -49,7 +49,7 @@
 
     <!-- banner part -->
 
-    <div class="container mx-auto text-center text-white bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] py-5">
+    <div class="w-full mx-auto text-center text-white bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] py-5">
         <img src="./assets/logo-dark.png" alt="Logo dark" class="w-20 h-20 md:w-24 md:h-24 mx-auto">
         <h1 class="font-bold text-lg md:text-[40px] mt-2">Emergency Service Directory</h1>
         <p class="mt-3 font-semibold text-sm md:text-xl px-4 md:px-0">Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of Bangladesh</p>
@@ -58,10 +58,10 @@
     <!-- main part -->
 
     <main class=" container mx-auto w-11/12 py-12 grid grid-cols-12 gap-5">
-        <section class="card-container col-span-9">
+        <section class="card-container col-span-12 md:col-span-9">
 
             <!-- row 1 DONE-->
-            <div class="card-row1 grid grid-cols-3 gap-5">
+            <div class="card-row1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
                 <!-- card-1 -->
                 <div class="card  h-[360px]">
                     <div class="card-body p-5 bg-white rounded-xl shadow-xl">
@@ -142,7 +142,7 @@
             </div>
 
              <!-- row 2 DONE -->
-            <div class="card-row1 grid grid-cols-3 gap-5 mt-5">
+            <div class="card-row1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-5">
                 <!-- card-1 -->
                 <div class="card h-[360px]">
                     <div class="card-body p-5 bg-white rounded-xl shadow-xl">
@@ -224,7 +224,7 @@
 
 
             <!-- row 3 Done-->
-            <div class="card-row1 grid grid-cols-3 gap-5 mt-5">
+            <div class="card-row1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-5">
                 <!-- card-1 -->
                 <div class="card  h-[360px]">
                     <div class="card-body p-5 bg-white rounded-xl shadow-xl">
@@ -305,7 +305,7 @@
             </div>
         </section>
 
-        <aside class="call-history bg-white p-6 col-span-3 rounded-xl shadow-xl">
+        <aside class="call-history bg-white p-6 col-span-12 md:col-span-3 rounded-xl shadow-xl">
             <div class="flex items-center gap-11">
                 <div class="flex items-center gap-2">
                     <i class="fa-regular fa-clock "></i>
@@ -318,12 +318,12 @@
             <!-- khali div for call button -->
              
 
-             <div id="service-history">
+             <!-- <div id="service-history">
                 <div class="entry-history p-4 rounded-lg mt-5 bg-[#f2f2f2] shadow-xl hidden">
                     <div id="service-name" class="font-semibold text-xl"></div>
                     <div id="service-number" class="text-[18px] text-[#5c5c5c]"></div>
                 </div>
-            </div>
+            </div> -->
            
         </aside>
     </main>
