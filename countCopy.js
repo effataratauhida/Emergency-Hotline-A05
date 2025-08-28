@@ -10,9 +10,9 @@ for (let i = 0; i < btns.length; i++) {
 
     const number = badge.innerText;
 
-    // clipboard event use
+    
     navigator.clipboard.writeText(number).then(function() {
-      // success হলে counter update এবং alert দেখানো
+      
       copyCount++;
       btnCopyNumber.innerText = copyCount;
       alert("The number is copied: " + number);

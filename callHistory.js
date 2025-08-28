@@ -9,7 +9,7 @@ buttons.forEach(function(btn) {
     const title = card.querySelector(".card-title").innerText;
     const number = card.querySelector(".badge-number").innerText;
 
-    alert("Calling " + title + " " + number + "...");
+    alert("📞 Calling " + title + " " + number + "...");
 
     // aside e history dekhano
     // const serviceName = document.getElementById("service-name");
