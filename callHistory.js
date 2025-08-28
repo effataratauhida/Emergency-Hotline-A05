@@ -1,24 +1,70 @@
 const buttons = document.querySelectorAll(".btn-call");
+const historyList = document.getElementById("service-history");
+const clearBtn = document.getElementById("btn-clear");
 
 
+let points = 100;
+const showPoints = document.getElementById("user-points");
 
 buttons.forEach(function(btn) {
   btn.addEventListener("click", function() {
-    const card = btn.closest(".card-body"); 
 
+    if (points < 20) {
+      alert("⚠️ No coins left! (20 needed)");
+      return;
+    }
+    
+    const card = btn.closest(".card-body"); 
     const title = card.querySelector(".card-title").innerText;
     const number = card.querySelector(".badge-number").innerText;
-
+    
+    // 1st alert message
     alert("📞 Calling " + title + " " + number + "...");
 
-    // aside e history dekhano
-    // const serviceName = document.getElementById("service-name");
-    // const serviceNumber = document.getElementById("service-number");
+    // coin reduce
+    points -= 20;
+    if (points < 0) points = 0; // safeguard
+    showPoints.innerText = points;
 
-    // serviceName.innerText = title;
-    // serviceNumber.innerText = number;
     
-   ;
+
+   
+   
+   
+   
+   
+   
+   
+    //  time set
+    function setTime() {
+      const d = new Date();
+      const time = d.toLocaleTimeString(undefined, {hour: '2-digit', minute: '2-digit', second: '2-digit'});
+      return time;
+    }
+  // adding title,number to new elements
+
+  function addHistoryList (title, number) {
+    const elm = document.createElement('div');
+    elm.className = 'bg-[#f2f2f2] rounded-xl p-1 flex flex-col gap-2 shadow-lg mt-5';
+    elm.innerHTML = `
+    <div class="flex flex-col">
+        <span class="font-semibold text-lg">${title}</span>
+        <span class=" text-gray-500 px-2 py-1 rounded-lg text-lg font-medium">
+            ${number}</span>
+    </div>
+    <div class="text-lg">${setTime()}</div>`;
+
+    historyList.append(elm);
+  }
+  addHistoryList(title, number);
+  
+  // history clear
+  clearBtn.addEventListener('click', function() {
+    historyList.innerHTML = '';
+
+  })
+
+   
 
            
   });
