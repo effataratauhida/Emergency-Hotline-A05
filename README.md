@@ -10,7 +10,7 @@ querySelectorAll is a CSS selector which can select multiple elements and return
 (2) How do you create and insert a new element into the DOM?
 
 Ans: To create a new element into the DOM we use document.createElement() and
-to insert a text or element into the DOM we use appendChild() or insertBefore() .
+to insert a text or element into the DOM we use appendChild() or set the value of innerHTML .
 
 
 (3) What is Event Bubbling and how does it work?
